@@ -4,6 +4,9 @@ Kata for practicing OO style programming
 The inspiration for this Kata comes from an example in the book
  [Object Design: Roles, Responsibilities, and Collaborations](https://www.amazon.co.uk/Object-Design-Responsibilities-Collaborations-Addison-Wesley/dp/0201379430) and the
   rules in the [Object Calisthenics](https://www.cs.helsinki.fi/u/luontola/tdd-2009/ext/ObjectCalisthenics.pdf) paper by Jeff Bay.
+
+Story:
+http://agilekatas.co.uk/katas/RockPaperScissors-Kata
 ## Description
 
 
