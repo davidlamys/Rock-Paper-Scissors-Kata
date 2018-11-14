@@ -13,6 +13,7 @@
 		1518C61E2194BD63004FA8A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1518C61D2194BD63004FA8A7 /* Assets.xcassets */; };
 		1518C6212194BD63004FA8A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1518C61F2194BD63004FA8A7 /* LaunchScreen.storyboard */; };
 		1518C62C2194BD63004FA8A7 /* RockPaperScissorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1518C62B2194BD63004FA8A7 /* RockPaperScissorsTests.swift */; };
+		15E90019219C71CE000602A4 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 15E90018219C71CE000602A4 /* README.md */; };
 		53FC7FAD446306D73436458E /* Pods_RockPaperScissors.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DFD7AA449F06665E4AB04BA /* Pods_RockPaperScissors.framework */; };
 		E75CCA451136645F0581A164 /* libPods-RockPaperScissorsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 436159AD1B08DF151CB59A6E /* libPods-RockPaperScissorsTests.a */; };
 /* End PBXBuildFile section */
@@ -38,6 +39,7 @@
 		1518C6272194BD63004FA8A7 /* RockPaperScissorsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RockPaperScissorsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1518C62B2194BD63004FA8A7 /* RockPaperScissorsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockPaperScissorsTests.swift; sourceTree = "<group>"; };
 		1518C62D2194BD63004FA8A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15E90018219C71CE000602A4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		436159AD1B08DF151CB59A6E /* libPods-RockPaperScissorsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RockPaperScissorsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		46E3E31149574CD8C5B4F915 /* Pods-RockPaperScissors.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RockPaperScissors.release.xcconfig"; path = "Pods/Target Support Files/Pods-RockPaperScissors/Pods-RockPaperScissors.release.xcconfig"; sourceTree = "<group>"; };
 		589D305FBDBF0084037C08B2 /* Pods-RockPaperScissorsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RockPaperScissorsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RockPaperScissorsTests/Pods-RockPaperScissorsTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 		1518C60A2194BD62004FA8A7 = {
 			isa = PBXGroup;
 			children = (
+				15E90018219C71CE000602A4 /* README.md */,
 				1518C6152194BD62004FA8A7 /* RockPaperScissors */,
 				1518C62A2194BD63004FA8A7 /* RockPaperScissorsTests */,
 				1518C6142194BD62004FA8A7 /* Products */,
@@ -213,6 +216,7 @@
 			files = (
 				1518C6212194BD63004FA8A7 /* LaunchScreen.storyboard in Resources */,
 				1518C61E2194BD63004FA8A7 /* Assets.xcassets in Resources */,
+				15E90019219C71CE000602A4 /* README.md in Resources */,
 				1518C61C2194BD62004FA8A7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
