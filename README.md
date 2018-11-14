@@ -84,11 +84,11 @@ As a player
 I want paper to beat rock
 So that I can play with rules I'm familiar with
         
-        >  Given I have chosen paper
+    >   Given I have chosen paper
         When the opponent chooses rock
         Then I should win
         
-        >   Given I have chosen rock
+    >   Given I have chosen rock
         When the opponent chooses paper
         Then they should win        
         
