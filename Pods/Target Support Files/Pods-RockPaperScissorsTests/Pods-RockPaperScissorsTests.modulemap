@@ -1,4 +1,4 @@
-framework module Pods_RockPaperScissorsTests {
+module Pods_RockPaperScissorsTests [system] {
   umbrella header "Pods-RockPaperScissorsTests-umbrella.h"
 
   export *
