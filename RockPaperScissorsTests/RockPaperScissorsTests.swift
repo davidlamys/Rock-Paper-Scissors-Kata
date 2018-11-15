@@ -12,26 +12,119 @@ import Nimble
 
 @testable import RockPaperScissors
 
-class RockPaperScissorsTests: XCTestCase {
-
-    override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+class RockPaperScissorsTests: QuickSpec {
+    
+    override func spec() {
+        describe("RockPaperScissorsTests") {
+            var result: Result!
+            context("Rock beats scissors") {
+                context("I have chosen rock") {
+                    context("when opponent has chosen scissors") {
+                        beforeEach {
+                            result = play(playerOne: .rock, playerTwo: .scissors)
+                        }
+                        
+                        it("player one should win the game") {
+                            expect(result).to(equal(.playerOneWin))
+                        }
+                    }
+                }
+                context("I have chosen scissors") {
+                    context("when opponent has chosen rock") {
+                        beforeEach {
+                            result = play(playerOne: .scissors, playerTwo: .rock)
+                        }
+                        
+                        it("player two should win the game") {
+                            expect(result).to(equal(.playerTwoWin))
+                        }
+                    }
+                }
+            }
+            context("Scissors beats paper") {
+                context("I have chosen scissors") {
+                    context("when opponent has chosen paper") {
+                        beforeEach {
+                            result = play(playerOne: .scissors, playerTwo: .paper)
+                        }
+                        
+                        it("player one should win the game") {
+                            expect(result).to(equal(.playerOneWin))
+                        }
+                    }
+                }
+                context("I have chosen paper") {
+                    context("when opponent has chosen scissors") {
+                        beforeEach {
+                            result = play(playerOne: .paper, playerTwo: .scissors)
+                        }
+                        
+                        it("player one should win the game") {
+                            expect(result).to(equal(.playerTwoWin))
+                        }
+                    }
+                }
+            }
+            context("Paper beats rock") {
+                context("I have chosen paper") {
+                    context("when opponent has chosen rock") {
+                        beforeEach {
+                            result = play(playerOne: .paper, playerTwo: .rock)
+                        }
+                        
+                        it("player one should win the game") {
+                            expect(result).to(equal(.playerOneWin))
+                        }
+                    }
+                }
+                context("I have chosen rock") {
+                    context("when opponent has chosen paper") {
+                        beforeEach {
+                            result = play(playerOne: .rock, playerTwo: .paper)
+                        }
+                        
+                        it("player one should win the game") {
+                            expect(result).to(equal(.playerTwoWin))
+                        }
+                    }
+                }
+            }
+            context("Same moves result in draw") {
+                context("I have chosen rock") {
+                    context("when opponent has chosen rock") {
+                        beforeEach {
+                            result = play(playerOne: .rock, playerTwo: .rock)
+                        }
+                        
+                        it("player one should win the game") {
+                            expect(result).to(equal(.draw))
+                        }
+                    }
+                }
+                context("I have chosen scissors") {
+                    context("when opponent has chosen scissors") {
+                        beforeEach {
+                            result = play(playerOne: .scissors, playerTwo: .scissors)
+                        }
+                        
+                        it("player one should win the game") {
+                            expect(result).to(equal(.draw))
+                        }
+                    }
+                }
+                context("I have chosen paper") {
+                    context("when opponent has chosen paper") {
+                        beforeEach {
+                            result = play(playerOne: .paper, playerTwo: .paper)
+                        }
+                        
+                        it("player one should win the game") {
+                            expect(result).to(equal(.draw))
+                        }
+                    }
+                }
+            }
         }
     }
-
+    
 }

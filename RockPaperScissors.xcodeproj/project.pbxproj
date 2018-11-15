@@ -13,6 +13,9 @@
 		1518C61E2194BD63004FA8A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1518C61D2194BD63004FA8A7 /* Assets.xcassets */; };
 		1518C6212194BD63004FA8A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1518C61F2194BD63004FA8A7 /* LaunchScreen.storyboard */; };
 		1518C62C2194BD63004FA8A7 /* RockPaperScissorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1518C62B2194BD63004FA8A7 /* RockPaperScissorsTests.swift */; };
+		15777882219D636600B4456A /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15777881219D636600B4456A /* Game.swift */; };
+		15777884219D642700B4456A /* Choice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15777883219D642700B4456A /* Choice.swift */; };
+		15777886219D656500B4456A /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15777885219D656500B4456A /* Result.swift */; };
 		15E90019219C71CE000602A4 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 15E90018219C71CE000602A4 /* README.md */; };
 		53FC7FAD446306D73436458E /* Pods_RockPaperScissors.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DFD7AA449F06665E4AB04BA /* Pods_RockPaperScissors.framework */; };
 		E75CCA451136645F0581A164 /* libPods-RockPaperScissorsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 436159AD1B08DF151CB59A6E /* libPods-RockPaperScissorsTests.a */; };
@@ -39,6 +42,9 @@
 		1518C6272194BD63004FA8A7 /* RockPaperScissorsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RockPaperScissorsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1518C62B2194BD63004FA8A7 /* RockPaperScissorsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockPaperScissorsTests.swift; sourceTree = "<group>"; };
 		1518C62D2194BD63004FA8A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15777881219D636600B4456A /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		15777883219D642700B4456A /* Choice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Choice.swift; sourceTree = "<group>"; };
+		15777885219D656500B4456A /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		15E90018219C71CE000602A4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		436159AD1B08DF151CB59A6E /* libPods-RockPaperScissorsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RockPaperScissorsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		46E3E31149574CD8C5B4F915 /* Pods-RockPaperScissors.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RockPaperScissors.release.xcconfig"; path = "Pods/Target Support Files/Pods-RockPaperScissors/Pods-RockPaperScissors.release.xcconfig"; sourceTree = "<group>"; };
@@ -98,6 +104,9 @@
 				1518C61D2194BD63004FA8A7 /* Assets.xcassets */,
 				1518C61F2194BD63004FA8A7 /* LaunchScreen.storyboard */,
 				1518C6222194BD63004FA8A7 /* Info.plist */,
+				15777881219D636600B4456A /* Game.swift */,
+				15777885219D656500B4456A /* Result.swift */,
+				15777883219D642700B4456A /* Choice.swift */,
 			);
 			path = RockPaperScissors;
 			sourceTree = "<group>";
@@ -275,6 +284,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1518C6192194BD62004FA8A7 /* ViewController.swift in Sources */,
+				15777886219D656500B4456A /* Result.swift in Sources */,
+				15777882219D636600B4456A /* Game.swift in Sources */,
+				15777884219D642700B4456A /* Choice.swift in Sources */,
 				1518C6172194BD62004FA8A7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
