@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum Choice {
+enum Choice: String {
     case scissors
     case rock
     case paper

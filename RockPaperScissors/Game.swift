@@ -10,10 +10,22 @@ import Foundation
 
 func play(playerOne playerOneChoice: Choice,
           playerTwo playerTwoChoice: Choice) -> Result {
-    if playerOneChoice == playerTwoChoice {
-        return .draw
-    }
-   
-    return playerOneChoice > playerTwoChoice ? .playerOneWin : .playerTwoWin
+    let game = playerOneChoice.rawValue + playerTwoChoice.rawValue
+    return resultMapping[game]!
 }
+
+let resultMapping: [String: Result] =
+    [
+        Choice.rock.rawValue + Choice.rock.rawValue         : .draw,
+        Choice.rock.rawValue + Choice.paper.rawValue        : .playerTwoWin,
+        Choice.rock.rawValue + Choice.scissors.rawValue     : .playerOneWin,
+        
+        Choice.paper.rawValue + Choice.rock.rawValue        : .playerOneWin,
+        Choice.paper.rawValue + Choice.paper.rawValue       : .draw,
+        Choice.paper.rawValue + Choice.scissors.rawValue    : .playerTwoWin,
+        
+        Choice.scissors.rawValue + Choice.rock.rawValue     : .playerTwoWin,
+        Choice.scissors.rawValue + Choice.paper.rawValue    : .playerOneWin,
+        Choice.scissors.rawValue + Choice.scissors.rawValue : .draw
+    ]
 
